@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-size: cover;
+  color: #000000;
+  margin: 0px;
+  padding: 1em;
+  height: 100vh;
+  width: 100vw;
+  background-position: center center;  
+  background-color: rgba(83, 88, 95, 0.7);
+  background-blend-mode: multiply;
+  transition: background-image 1s ease-in-out;
+}
+
+.quote {
+  position: absolute;
+  bottom: 1em;
+  left: 20%;
+  right: 20%;
+  font-family: 'Quicksand', sans-serif;
+  font: 1.2rem;
+  margin: 0;
+  background: rgba(0, 0, 0, 0.692);
+  padding: 1em;
+  border-radius: 1em;
+  }
+  .quote figcaption,
+  .quote blockquote {
+    margin: 1em 1em 0em 1em;
+    text-align: center;
+  }
+  .quote figcaption {
+    text-align: center;
+  }
+  .btn1 {
+    position: absolute;
+    bottom: 1em;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    border-radius: 50%;
+    background: url('refresh.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: grayscale(1);
+    margin: 10px;
+  }
+  .btn1:hover {
+    filter: grayscale(.8);
+  }
+  .btn1:active,
+  .btn1:focus {
+    outline: 0;
+  }
+  .btn1:active{
+    transform: scale(1.08)
+  }
+  
+  .btnPrev {
+    position: fixed;
+    top: 50%;
+    left: 1em;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    background: url('left.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+  }
+  
+  .btnNext {
+    position: fixed;
+    top: 50%;
+    right: 1em;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    background: url('right.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+  }
+  
+  .btnNext:active,
+  .btnNext:focus {
+    outline: 0;
+    
+  }
+  
+  .btnPrev:active,
+  .btnPrev:focus {
+    outline: 0;
+  }
+  
+  .btnPrev:active {
+    transform: translateX(-10%);
+    
+  }  
+  
+  .btnNext:active {
+    transform: translateX(10%);
+  } 
+
+  .day {
+    padding: 1.2em 0em 0em 0em;
+    font-size: 5rem;
+    text-align: center;
+  }
+
+.time {
+  font-size: 8rem;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 0.5rem;
+  opacity: 0.8;
+  text-align: center;
+}
+
+.city{
+    padding: 1em;
+    position: absolute; 
+    top: 2em; 
+    left: 2em;
+    text-align:left;
+    background: rgba(0, 0, 0, 0.692);
+    border-radius: 1em;
+}
+
+.weather{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 1em; 
+  right: 1em;
+  padding: 1em;
+  background: rgba(0, 0, 0, 0.692);
+  border-radius: 1em;
+}
+
+
+
+@media (max-width: 320px) {
+
+}
